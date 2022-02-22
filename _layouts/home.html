@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-US">
+
+	{% include head.html %}
+
+    <body data-spy="scroll" data-target="#main-navbar">
+
+        <div class="page-loader"></div>  <!-- Display loading image while page loads -->
+    	<div class="body">
+        
+            {% include header.html %}
+            {% include carousel.html %}
+            {% include about.html %}
+            {% include cta.html %}
+            {% include services.html %}
+            {% include reviews.html %}
+            {% include portfolio.html %}
+            {% include counter.html %}
+            {% include team.html %}
+            {% include partners.html %}
+            {% include prices.html %}
+            {% include social.html %}
+            {% include contact.html %}
+            {% include footer.html %}
+
+            <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> <!-- Scroll to top button -->
+
+        </div><!-- body ends -->
+
+        {% include scripts.html %}
+
+    </body> 
+    
+</html>
