@@ -32,7 +32,6 @@ instagram_username: riverstudio.ir
 linkedin_username: riverstudio
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 
