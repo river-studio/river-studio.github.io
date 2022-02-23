@@ -1,15 +1,46 @@
-<!-- Plugins JS -->
-<script src="inc/jquery/jquery-1.11.1.min.js"></script>
-<script src="inc/bootstrap/js/bootstrap.min.js"></script>
-<script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
-<script src="inc/stellar/js/jquery.stellar.min.js"></script>
-<script src="inc/animations/js/wow.min.js"></script>
-<script src="inc/waypoints.min.js"></script>
-<script src="inc/isotope.pkgd.min.js"></script>
-<script src="inc/classie.js"></script>
-<script src="inc/jquery.easing.min.js"></script>
-<script src="inc/jquery.counterup.min.js"></script>
-<script src="inc/smoothscroll.js"></script>
+<!-- ====== All Scripts -->
 
-<!-- Theme JS -->
-<script src="js/theme.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  // ==== for menu scroll
+  const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+  pageLink.forEach((elem) => {
+    elem.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.querySelector(elem.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+        offsetTop: 1 - 60,
+      });
+    });
+  });
+
+  // section menu active
+  function onScroll(event) {
+    const sections = document.querySelectorAll(".ud-menu-scroll");
+    const scrollPos =
+      window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop;
+
+    for (let i = 0; i < sections.length; i++) {
+      const currLink = sections[i];
+      const val = currLink.getAttribute("href");
+      const refElement = document.querySelector(val);
+      const scrollTopMinus = scrollPos + 73;
+      if (
+        refElement.offsetTop <= scrollTopMinus &&
+        refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+      ) {
+        document
+          .querySelector(".ud-menu-scroll")
+          .classList.remove("active");
+        currLink.classList.add("active");
+      } else {
+        currLink.classList.remove("active");
+      }
+    }
+  }
+
+  window.document.addEventListener("scroll", onScroll);
+</script>
