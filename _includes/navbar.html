@@ -94,6 +94,27 @@ class="
             </li>
             <li class="relative group">
               <a
+                href="#services"
+                class="
+                  ud-menu-scroll
+                  text-base text-dark
+                  lg:text-white
+                  lg:group-hover:opacity-70
+                  lg:group-hover:text-white
+                  group-hover:text-primary
+                  py-2
+                  lg:py-6 lg:inline-flex lg:px-0
+                  flex
+                  mx-8
+                  lg:mr-0 lg:ml-7
+                  xl:ml-12
+                "
+              >
+                Services
+              </a>
+            </li>
+            <li class="relative group">
+              <a
                 href="#about"
                 class="
                   ud-menu-scroll
@@ -111,27 +132,6 @@ class="
                 "
               >
                 About
-              </a>
-            </li>
-            <li class="relative group">
-              <a
-                href="#pricing"
-                class="
-                  ud-menu-scroll
-                  text-base text-dark
-                  lg:text-white
-                  lg:group-hover:opacity-70
-                  lg:group-hover:text-white
-                  group-hover:text-primary
-                  py-2
-                  lg:py-6 lg:inline-flex lg:px-0
-                  flex
-                  mx-8
-                  lg:mr-0 lg:ml-7
-                  xl:ml-12
-                "
-              >
-                Pricing
               </a>
             </li>
             <li class="relative group">
@@ -206,7 +206,7 @@ class="
                   after:mt-[-2px]
                 "
               >
-                Pages
+                Other
               </a>
               <div
                 class="
@@ -240,7 +240,7 @@ class="
                     px-4
                   "
                 >
-                  About Page
+                  About Us
                 </a>
                 <a
                   href="pricing.html"
@@ -340,21 +340,7 @@ class="
       </div>
       <div class="sm:flex justify-end hidden pr-16 lg:pr-0">
         <a
-          href="signin.html"
-          class="
-            text-base
-            font-medium
-            text-white
-            hover:opacity-70
-            py-3
-            px-7
-            loginBtn
-          "
-        >
-          Sign In
-        </a>
-        <a
-          href="signup.html"
+          href="{{ site.url}}/blog"
           class="
             text-base
             font-medium
@@ -369,7 +355,7 @@ class="
             ease-in-out
           "
         >
-          Sign Up
+          Blog
         </a>
       </div>
     </div>

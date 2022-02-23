@@ -29,6 +29,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: riverstudio.ir
 github_username:  river-studio
 instagram_username: riverstudio.ir
+linkedin_username: riverstudio
 
 # Build settings
 theme: minima
