@@ -13,7 +13,7 @@ class="relative pt-[120px] md:pt-[130px] lg:pt-[160px] bg-primary"
           max-w-[780px]
           mx-auto
           wow
-          fadeInUp
+          fadeInDown
         "
         data-wow-delay=".2s"
       >
@@ -30,7 +30,7 @@ class="relative pt-[120px] md:pt-[130px] lg:pt-[160px] bg-primary"
             mb-8
           "
         >
-          Open-Source Web Template for SaaS, Startup, Apps, and More
+          {{ site.title }}
         </h1>
         <p
           class="
@@ -43,13 +43,12 @@ class="relative pt-[120px] md:pt-[130px] lg:pt-[160px] bg-primary"
             max-w-[600px]
           "
         >
-          Multidisciplinary Web Template Built with Your Favourite
-          Technology - HTML Bootstrap, Tailwind and React NextJS.
+          {{ site.description }}
         </p>
         <ul class="flex flex-wrap items-center justify-center mb-10">
           <li>
             <a
-              href="https://links.tailgrids.com/play-download"
+              href="#Portfolio"
               class="
                 py-4
                 px-6
@@ -67,13 +66,12 @@ class="relative pt-[120px] md:pt-[130px] lg:pt-[160px] bg-primary"
                 ease-in-out
               "
             >
-              Download Now
+              Go to Portfolio
             </a>
           </li>
           <li>
             <a
-              href="https://github.com/tailgrids/play-tailwind"
-              target="_blank"
+              href="#services"
               class="
                 text-base
                 font-medium
@@ -89,7 +87,7 @@ class="relative pt-[120px] md:pt-[130px] lg:pt-[160px] bg-primary"
                 ease-in-out
               "
             >
-              Star on Github
+              Services
               <span class="pl-2">
                 <svg
                   width="20"
